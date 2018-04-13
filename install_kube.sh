@@ -12,4 +12,4 @@ repo_gpgcheck=0
 EOF
 # 关闭SELinux
 setenforce 0
-(yum install -y kubelet kubeadm kubectl && systemctl enable kubelet && systemctl start kubelet)&
+(yum install -y kubelet-1.9.0-0 kubeadm-1.9.0-0 kubectl-1.9.0-0 && systemctl enable kubelet && systemctl start kubelet)&
